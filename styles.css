@@ -1,84 +1,89 @@
 @font-face {
-    font-family: 'Value';
-    src: url('fonts.otf') format('truetype');
+  font-family: "Value";
+  src: url("fonts.otf") format("truetype");
 }
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Value', sans-serif;
+  font-family: "Value", sans-serif;
 }
 
 .navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    max-width: 1500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
 
 .logo {
-    color: #153a5b;
+  color: #153a5b;
+  margin: 0 4rem;
 }
 
 .icon-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.53rem;
 }
 
 .my-icon {
-    fill: #a9a9a9;
+  fill: #a9a9a9;
 }
 
- .bar {
+.bar {
   width: 25px;
-height: 3px;
-background-color: #a9a9a9;
-margin-top: 5px;
+  height: 3px;
+  background-color: #a9a9a9;
+  margin-top: 5px;
 }
 
 .menu {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .menu li {
-    list-style: none;
+  list-style: none;
 }
 
 .nav-links {
   text-decoration: none;
-color: #153a5b;
-font-size: 14px;
-text-transform: uppercase;
-position: relative;
+  color: #153a5b;
+  font-size: 0.93rem;
+  text-transform: uppercase;
+  position: relative;
+  font-family: "Value";
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  line-height: 1.33333rem;
+  transition: color 0.5s ease-in-out;
 }
 
 .nav-links::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 2px;
-    width: 0;
-    background: #153a5b;
-    transition: width 0.3s ease;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background: #153a5b;
+  transition: width 0.3s ease;
 }
 
 .nav-links:hover {
-    color: #153a5b;
+  color: #153a5b;
 }
 
 .nav-links:hover::after {
-    width: 100%;
+  width: 100%;
 }
 
 @media (max-width: 768px) {
