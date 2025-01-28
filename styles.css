@@ -158,7 +158,7 @@ body {
 .review-section {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
   flex-wrap: wrap;
   padding: 4rem 0;
 }
@@ -182,12 +182,14 @@ body {
 }
 
 .slider {
-  width: 300px;
+  width: 200px;
+  gap: 1rem;
   position: relative;
 }
 
 .slides {
   display: flex;
+  gap: 1rem;
   transition: transform 0.5s ease-in-out;
 }
 
@@ -209,8 +211,7 @@ body {
 }
 
 .slide-icon {
-  width: 70px;
-  margin-top: 6.5rem;
+  display: none;
 }
 
 .star-rating {
@@ -293,6 +294,13 @@ body {
 
   .slider {
     overflow: hidden;
+    width: 300px;
+  }
+
+  .slide-icon {
+    display: block;
+    width: 70px;
+    margin-top: 6.5rem;
   }
 
   .pagination {
